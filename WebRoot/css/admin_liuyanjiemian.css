@@ -1,0 +1,11 @@
+.tj input {
+	margin-left: 380px;
+	padding: 20px;
+	border: 1px solid #D1E8FF;
+	width: 300px;
+	text-align: center;
+	background-color: #D1E8FF;
+	font-size: 43px;
+	cursor: pointer;
+}
+.tj input:hover{background-color:#93d3d7;color:red;}

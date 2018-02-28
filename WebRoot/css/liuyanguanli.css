@@ -1,0 +1,12 @@
+.keleyitable {  width: 98%; } 
+.keleyitable table, td, th {  border: 1px solid green;margin-top:10px;}
+.keleyitable tr{width:100px;text-align:right}
+.keleyitable .td_id{width:70px;height:33px;}
+.keleyitable .td_time{width:180px;height:33px;}
+.keleyitable .td_name{width:210px;height:33px;}
+.keleyitable .food_name{width:150px;height:33px;}
+.keleyitable .td_comment{width:400px;height:33px;}
+.keleyitable .td_stars{width:70px;;overflow-x:auto;overflow-y:hidden;height:33px;}
+.keleyitable .td{width: 110px;height:33px;}
+.keleyitable .td input{ background-color: #fff;border: 0px;cursor:pointer;height:33px;}
+.keleyitable .td input:hover{background-color:blue;color:#FA7341}

@@ -1,0 +1,51 @@
+/* ============�����?============== */
+div.ordersearchform{
+	width:682px;
+	height:318px;
+	background:url(../images/orderbay.jpg) no-repeat;
+} 
+div.ordersearchform div.searchform{
+	padding-top:15px;
+	padding-left:160px;
+	line-height:24px;
+	font-size:14px;
+}
+
+div.ordersearchform div.searchform1{
+	padding-top:35px;
+	padding-left:40px;
+	line-height:24px;
+	font-size:14px;
+}
+
+div.ordersearchform div.searchform2{
+	padding-top:10px;
+	padding-left:160px;
+	line-height:24px;
+	font-size:14px;
+}
+
+div.ordersearchform div.searchform3{
+	padding-top:25px;
+	padding-left:235px;
+}
+
+div.searchform3 input{
+	width: 125px;
+height: 41px;
+cursor: pointer;
+background-color: rgb(194, 126, 1);
+font-size: 23px;
+border: 0;
+}
+div.searchform3 input:hover{
+	color:red;
+	
+}
+div.ordersearchform div.searchform .input{
+	border:1px #ddd solid;
+	height:18px;
+	line-height:18px;
+	padding:0px 3px;
+	background:#fbfbfb
+}

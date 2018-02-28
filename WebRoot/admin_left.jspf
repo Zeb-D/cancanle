@@ -1,0 +1,57 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"  pageEncoding="UTF-8"%> 
+<%
+	String mypath = request.getContextPath();
+	String mybasePath = request.getScheme() + "://"
+			+ request.getServerName() + ":" + request.getServerPort()
+			+ mypath + "/";
+%>
+<div class="sidebar-wrap">
+        <div class="sidebar-title">
+            <h1>菜单</h1>
+        </div>
+        <div class="sidebar-content">
+            <ul class="sidebar-list" >
+                <li>
+                    <a href="#"><i class="icon-font">&#xe003;</i>订单管理</a>
+                    <ul class="sub-menu">
+                        <li><a href="<%=mybasePath %>FoodOrder/comfirm.do"><i class="icon-font">&#xe008;</i>确认订单</a></li>
+                        <li><a href="<%=mybasePath %>FoodOrder/queryList.do"><i class="icon-font">&#xe006;</i>查阅所有订单</a></li>
+                        <li><a href="<%=mybasePath %>FoodOrder/uncomfirm.do"><i class="icon-font">&#xe004;</i>查阅未完成订单</a></li>           
+                    </ul>
+                </li>
+                <li>
+                    <a href="#"><i class="icon-font">&#xe018;</i>会员管理</a>
+                    <ul class="sub-menu">
+                        <li><a href="<%=mybasePath %>UserInfo/queryList.do"><i class="icon-font">&#xe017;</i>查看所有会员</a></li>
+                        <li><a href="<%=mybasePath %>UserInfo/queryList2.do"><i class="icon-font">&#xe037;</i>修改会员</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#"><i class="icon-font">&#xe003;</i>菜品管理</a>
+                    <ul class="sub-menu">
+                        <li><a href="<%=mybasePath %>Food/addFood.do"><i class="icon-font">&#xe008;</i>增加菜品</a></li>
+                        <li><a href="<%=mybasePath %>Food/deleteFood.do"><i class="icon-font">&#xe005;</i>删除菜品</a></li>
+                        <li><a href="<%=mybasePath %>Food/queryList.do"><i class="icon-font">&#xe006;</i>查看菜品</a></li>
+                        <li><a href="<%=mybasePath %>Food/updateFood.do"><i class="icon-font">&#xe004;</i>修改菜品</a></li>           
+                    </ul>
+                </li>
+                <li>
+                    <a href="#"><i class="icon-font">&#xe003;</i>商家管理</a>
+                    <ul class="sub-menu">
+                        <li><a href="<%=mybasePath %>Seller/queryList.do"><i class="icon-font">&#xe008;</i>查看所有商家</a></li>
+                        <li><a href="<%=mybasePath %>Seller/queryList.do"><i class="icon-font">&#xe005;</i>增加商家</a></li>
+                        <li><a href="#"><i class="icon-font">&#xe006;</i>删除商家</a></li>         
+                    </ul>
+                </li>
+                <li>
+                    <a href="#"><i class="icon-font">&#xe003;</i>留言管理</a>
+                    <ul class="sub-menu">
+                        <li><a href="<%=mybasePath %>Liuyan/lookliuyan.do"><i class="icon-font">&#xe008;</i>查看留言</a></li>
+                        <li><a href="<%=mybasePath %>Liuyan/lookliuyan.do"><i class="icon-font">&#xe005;</i>回复留言</a></li>
+                        <li><a href="<%=mybasePath %>Liuyan/dliuyan.do"><i class="icon-font">&#xe006;</i>删除留言</a></li>           
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--/sidebar-->

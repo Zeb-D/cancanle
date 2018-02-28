@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+  <style type="text/css">
+  		table,th,td{border:1px solid gray;}
+        table{border-collapse:collapse;}
+  </style>
+    <title>MyHtml.html</title>
+	
+    <meta name="keywords" content="keyword1,keyword2,keyword3">
+    <meta name="description" content="this is my page">
+    <meta name="content-type" content="text/html; charset=UTF-8">
+	<script type="text/javascript" src="js/libs/modernizr.min.js"></script>
+
+  </head>
+  
+  <body>
+  
+  <script type="text/javascript">
+	function clickBtn(id) {
+		alert(id);
+		
+	}
+  
+   
+    $("#btnDelete").click(function(){
+        var statu = confirm("确认删除");
+        if(!statu){
+            return false;
+            alert("出错啦！");
+        }
+        
+    });
+   
+</script>
+  <input id="btn"type="button" value="submit" onclick="clickBtn('1122')"/>
+  <input id="btnDelete" type="button" value="确认删除" onclick=""/>
+  <a  href="UserInfo/queryList.do" onclick="{if(confirm('确认删除?')){return true;}return false;}">删除</a>
+    <table >
+        <caption>表格标题</caption>
+        <!--表头-->
+        <thead>
+            <tr>
+                <th>表头单元格1</th>
+        <th>表头单元格2</th>
+            </tr>
+        </thead>
+        <!--表身-->
+        <tbody>
+            <tr>
+                <td>标准单元格1</td>
+                <td>标准单元格2</td>
+            </tr>
+            <tr>
+                <td>标准单元格1</td>
+                <td>标准单元格2</td>
+            </tr>
+        </tbody>
+        <!--表脚-->
+        <tfoot>
+            <tr>
+                <td>标准单元格1</td>
+                <td>标准单元格2</td>
+            </tr>
+        </tfoot>
+    </table>
+  </body>
+</html>
